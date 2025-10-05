@@ -26,9 +26,7 @@ Analisis ini menggunakan dataset pertanian untuk memahami faktor-faktor yang mem
 
 
 ## 📖 Latar Belakang
-Statistika berperan penting dalam mengubah data menjadi informasi bermakna untuk mendukung pengambilan keputusan. Dalam sektor pertanian, hasil panen dipengaruhi oleh banyak faktor seperti jenis tanah, curah hujan, dan suhu.  
-Dengan hadirnya teknologi **IoT** dan **Machine Learning**, data pertanian kini dapat dikumpulkan dan dianalisis secara real-time.  
-Sebagai kampus yang unggul di bidang pertanian dan teknologi, **IPB University** relevan dalam mengintegrasikan statistika, IoT, dan *machine learning* untuk membangun pertanian cerdas (*smart farming*).
+Statistika berperan penting dalam mengubah data menjadi informasi bermakna untuk mendukung pengambilan keputusan. Dalam sektor pertanian, hasil panen dipengaruhi oleh banyak faktor seperti jenis tanah, curah hujan, dan suhu. Dengan hadirnya teknologi **IoT** dan **Machine Learning**, data pertanian kini dapat dikumpulkan dan dianalisis secara real-time. Sebagai kampus yang unggul di bidang pertanian dan teknologi, **IPB University** relevan dalam mengintegrasikan statistika, IoT, dan *machine learning* untuk membangun pertanian cerdas (*smart farming*).
 
 ## 🎯 Tujuan Analisis
 1. Menganalisis perbedaan hasil panen berdasarkan penggunaan pupuk dan jenis tanah.  
