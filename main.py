@@ -14,7 +14,7 @@ def setup_dataset():
     load_dotenv()
     dataset_path = os.getenv("DATASET_PATH")
 
-    if dataset_path is None:
+    if dataset_path is None or dataset_path == "":
         print("Dataset belum ditemukan. Mengunduh dari Kaggle...")
         path = kagglehub.dataset_download("samuelotiattakorah/agriculture-crop-yield")
 
