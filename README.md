@@ -36,36 +36,60 @@ Statistika berperan penting dalam mengolah data menjadi informasi bermakna untuk
 ## 📈 Hasil Analisis Statistik
 
 ### 🔹 1. Uji T (Independent Samples T-Test) + Uji F (Levene’s Test)
+
+**Statistik Deskriptif per Kelompok:**
+
+| Kelompok | Mean | Median | Std Deviasi | Variance | Jumlah Data (n) |
+|-----------|------|---------|--------------|-----------|-----------------|
+| Tanpa Pupuk | 3.8995 | 3.9038 | 1.5214 | 2.3146 | 500,060 |
+| Dengan Pupuk | 5.3996 | 5.3986 | 1.5222 | 2.3170 | 499,940 |
+
+---
+
 **Uji F – Homogenitas Varians:**
 - H₀ : Varians kedua kelompok sama (homogen).  
 - H₁ : Varians kedua kelompok berbeda (tidak homogen).  
 
-**Hasil Uji F:**
-- F-statistic = **0.0815**  
-- P-value = **0.7753**  
-- **Keputusan Uji F:** Gagal tolak H₀ → Varians homogen → Gunakan uji t dengan equal_var = True.  
+| Statistik | Nilai |
+|------------|--------|
+| Fhitung | **0.0815** |
+| Ftabel (α=0.05) | **1.0047** |
+| P-value | **7.7534e-01** |
+| Keputusan | **Gagal tolak H₀ (Varians homogen)** |
+
+---
 
 **Uji T – Perbandingan Rata-rata:**
 - H₀ : Tidak ada perbedaan rata-rata hasil panen antara lahan dengan dan tanpa pupuk.  
 - H₁ : Ada perbedaan rata-rata hasil panen antara lahan dengan dan tanpa pupuk.  
 
-**Hasil Uji T:**
-- T-statistic = **492.8825**  
-- P-value = **< 1e-308 (sangat signifikan)**  
-- **Keputusan:** Tolak H₀ → Ada perbedaan rata-rata hasil panen antara lahan dengan pupuk dan tanpa pupuk.  
+| Statistik | Nilai |
+|------------|--------|
+| Thitung | **492.8825** |
+| Ttabel (α=0.05, two-tailed)** | **1.9600** |
+| P-value | **< 1e-308 (sangat signifikan)** |
+| Keputusan | **Tolak H₀ → Ada perbedaan signifikan antara lahan dengan pupuk dan tanpa pupuk.** |
 
 📊 *Grafik:* [output/uji_t.jpg](output/uji_t.jpg)
 
 ---
 
 ### 🔹 2. Uji ANOVA (One-Way)
+
 **Hipotesis:**
 - H₀ : Rata-rata hasil panen sama pada semua jenis tanah.  
 - H₁ : Ada perbedaan rata-rata hasil panen pada minimal satu jenis tanah.  
 
+**Tabel Hasil Analisis Variansi (ANOVA):**
+
+| Sumber Keragaman | df | Sum of Squares | Mean Square | F hitung | F tabel (0.05) |
+|------------------|----|----------------|--------------|-----------|----------------|
+| Between (Antarkelompok) | 5 | 6.6255 | 1.3251 | 0.4604 | 2.2141 |
+| Within (Dalam Kelompok) | 999,994 | 2,878,348.5780 | 2.8784 | – | – |
+| Total | 999,999 | 2,878,355.2035 | – | – | – |
+
 **Hasil:**
-- F-statistic = **0.4604**  
-- P-value = **0.8060**  
+- P-value = **8.0600e-01**  
 - **Keputusan:** Gagal tolak H₀ → Tidak ada perbedaan signifikan antar jenis tanah terhadap hasil panen.  
 
 📊 *Grafik:* [output/uji_anova.jpg](output/uji_anova.jpg)
