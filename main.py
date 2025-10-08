@@ -37,7 +37,6 @@ def main():
         "1": "uji_t.py",
         "2": "uji_anova.py",
         "3": "uji_regresi.py",
-        "4": "uji_chi_square.py",
     }
 
     scripts_dir = Path(__file__).resolve().parent / "scripts"
@@ -47,7 +46,6 @@ def main():
         print("1. Uji T")
         print("2. ANOVA")
         print("3. Korelasi & Regresi")
-        print("4. Chi-Square")
         print("0. Keluar")
 
         choice = input("Pilih pengujian (0-4): ").strip()
