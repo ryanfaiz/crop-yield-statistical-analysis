@@ -5,6 +5,7 @@ Analisis ini menggunakan dataset pertanian untuk memahami faktor-faktor yang mem
 
 ## 🪪 Penulis
 - Ryan Faiz Sanie (J0404241078)
+- Maulana Krisna Wahyu Agung (J0404241165)
 
 ## 📂 Dataset
 **Sumber:** [Kaggle – Agriculture Crop Yield](https://www.kaggle.com/datasets/samuelotiattakorah/agriculture-crop-yield)
